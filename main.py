@@ -16,7 +16,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
 # Token and Channel
-DISCORD_TOKEN = processs.env['TOKEN']
+DISCORD_TOKEN = process.env['TOKEN']
 CHANNEL_ID = 1375060747754668138  # Replace this with your actual channel ID
 
 # Web server to keep bot alive
