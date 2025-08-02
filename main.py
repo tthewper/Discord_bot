@@ -13,6 +13,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 # Create bot
+bot = commands.Bot(command_prefix='!', intents=intents)
 client = discord.Client(intents=intents)
 
 # Token and Channel
