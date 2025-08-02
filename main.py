@@ -326,4 +326,4 @@ async def legalhelp(ctx):
 
 # Keep bot alive and run it
 keep_alive()
-bot.run(DISCORD_TOKEN)
+client.run(DISCORD_TOKEN)
