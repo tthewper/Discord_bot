@@ -15,10 +15,8 @@ intents.message_content = True
 # Create bot
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
-client = discord.Client(intents=intents)
-
 # Token and Channel
-DISCORD_TOKEN = os.environ["TOKEN"]
+DISCORD_TOKEN = os.environ['DISCORD_TOKEN']
 CHANNEL_ID = 1375060747754668138  # Replace this with your actual channel ID
 
 # Web server to keep bot alive
@@ -328,4 +326,4 @@ async def legalhelp(ctx):
 
 # Keep bot alive and run it
 keep_alive()
-client.run(DISCORD_TOKEN)
+bot.run(DISCORD_TOKEN)
